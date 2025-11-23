@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baclogo"
+    tools:context=".CartBuyMedcineActivity">
+
+
+    <Button
+        android:id="@+id/buttonBMBack"
+        android:layout_width="80sp"
+        android:layout_height="40sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="18dp"
+        android:backgroundTint="@color/dark_neavy_blue"
+        android:text="Back"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/listViewBMCardTittle"
+        app:layout_constraintEnd_toStartOf="@+id/TextViewBMCardTittle"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <TextView
+        android:id="@+id/textCardBMTittleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUICK D0C "
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008" />
+
+    <TextView
+        android:id="@+id/TextViewBMTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/cool_gray"
+        android:paddingTop="1dp"
+        android:text="Deliver Locaton : DELHI (NCR)"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <TextView
+        android:id="@+id/TextViewBMCardTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="1dp"
+        android:text="LabTest and Package"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.118" />
+
+
+    <Button
+        android:id="@+id/btnBMcartCheckout"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/dark_neavy_blue"
+        android:text="CHECKOUT"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewBMCardTittle"
+        app:layout_constraintVertical_bias="0.98" />
+
+
+    <ListView
+        android:id="@+id/listViewBMCardTittle"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/baclabtest1"
+        android:paddingTop="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBMcartCheckout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCardBMTittleView"
+        app:layout_constraintVertical_bias="0.357">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/buttonBMcartdate"
+        style="?android:spinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:text="27/9/2003      "
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btnBMcartCheckout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DateBMcheck" />
+
+    <TextView
+        android:id="@+id/DateBMcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/black"
+        android:backgroundTint="@color/white"
+        android:text="Select date"
+        android:textColor="@color/purplepark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBMcartdate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BMcartTottalcost" />
+
+    <TextView
+        android:id="@+id/BMcartTottalcost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="96dp"
+        android:background="@color/cool_gray"
+        android:text="Tottal cost 500/-"
+        android:textColor="@color/purplepark"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnBMcartCheckout"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewBMCardTittle"
+        app:layout_constraintVertical_bias="0.133" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
